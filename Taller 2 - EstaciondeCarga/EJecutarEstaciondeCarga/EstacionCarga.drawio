@@ -1,0 +1,119 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="ZaV_SfJLWjSsS_FjS6lj">
+    <mxGraphModel dx="1679" dy="959" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-33" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=71;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="&lt;&lt;interface&gt;&gt;&#xa;Carga" vertex="1">
+          <mxGeometry height="126" width="264" x="20" y="753" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-34" parent="ktkT-tB9A3ZlmC_fMyVz-33" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="8" width="264" y="71" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-35" parent="ktkT-tB9A3ZlmC_fMyVz-33" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+cargar(kwh: double) : void" vertex="1">
+          <mxGeometry height="47" width="264" y="79" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-36" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="EstacionDeCarga" vertex="1">
+          <mxGeometry height="264" width="415" x="102" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-37" parent="ktkT-tB9A3ZlmC_fMyVz-36" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="-nombre: String" vertex="1">
+          <mxGeometry height="32" width="415" y="32" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-38" parent="ktkT-tB9A3ZlmC_fMyVz-36" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="-ubicacion: String" vertex="1">
+          <mxGeometry height="32" width="415" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-39" parent="ktkT-tB9A3ZlmC_fMyVz-36" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="-energiaPorCiclo: double" vertex="1">
+          <mxGeometry height="32" width="415" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-40" parent="ktkT-tB9A3ZlmC_fMyVz-36" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="8" width="415" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-41" parent="ktkT-tB9A3ZlmC_fMyVz-36" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+registrarVehiculo(v: VehiculoElectrico) : void" vertex="1">
+          <mxGeometry height="32" width="415" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-42" parent="ktkT-tB9A3ZlmC_fMyVz-36" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+retirarVehiculo(matricula: String) : boolean" vertex="1">
+          <mxGeometry height="32" width="415" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-43" parent="ktkT-tB9A3ZlmC_fMyVz-36" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+suministrarEnergia() : void" vertex="1">
+          <mxGeometry height="32" width="415" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-44" parent="ktkT-tB9A3ZlmC_fMyVz-36" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+mostrarEstadoVehiculos() : void" vertex="1">
+          <mxGeometry height="32" width="415" y="232" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-45" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="VehiculoElectrico" vertex="1">
+          <mxGeometry height="264" width="334" x="143" y="358" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-46" parent="ktkT-tB9A3ZlmC_fMyVz-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="-marca: String" vertex="1">
+          <mxGeometry height="32" width="334" y="32" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-47" parent="ktkT-tB9A3ZlmC_fMyVz-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="-modelo: String" vertex="1">
+          <mxGeometry height="32" width="334" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-48" parent="ktkT-tB9A3ZlmC_fMyVz-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="-matricula: String" vertex="1">
+          <mxGeometry height="32" width="334" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-49" parent="ktkT-tB9A3ZlmC_fMyVz-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="-bateria: Bateria" vertex="1">
+          <mxGeometry height="32" width="334" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-50" parent="ktkT-tB9A3ZlmC_fMyVz-45" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="8" width="334" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-51" parent="ktkT-tB9A3ZlmC_fMyVz-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+cargar(kwh: double) : void" vertex="1">
+          <mxGeometry height="32" width="334" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-52" parent="ktkT-tB9A3ZlmC_fMyVz-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+realizarViaje(kwh: double) : void" vertex="1">
+          <mxGeometry height="32" width="334" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-53" parent="ktkT-tB9A3ZlmC_fMyVz-45" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+mostrarEstado() : void" vertex="1">
+          <mxGeometry height="32" width="334" y="232" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-54" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=32;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Bateria" vertex="1">
+          <mxGeometry height="264" width="268" x="334" y="696" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-55" parent="ktkT-tB9A3ZlmC_fMyVz-54" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="-capacidadMaxima: double" vertex="1">
+          <mxGeometry height="32" width="268" y="32" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-56" parent="ktkT-tB9A3ZlmC_fMyVz-54" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="-capacidadActual: double" vertex="1">
+          <mxGeometry height="32" width="268" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-57" parent="ktkT-tB9A3ZlmC_fMyVz-54" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="-estadoSalud: int" vertex="1">
+          <mxGeometry height="32" width="268" y="96" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-58" parent="ktkT-tB9A3ZlmC_fMyVz-54" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1">
+          <mxGeometry height="8" width="268" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-59" parent="ktkT-tB9A3ZlmC_fMyVz-54" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+usar(cantidad: double) : void" vertex="1">
+          <mxGeometry height="32" width="268" y="136" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-60" parent="ktkT-tB9A3ZlmC_fMyVz-54" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+recargar(kwh: double) : void" vertex="1">
+          <mxGeometry height="32" width="268" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-61" parent="ktkT-tB9A3ZlmC_fMyVz-54" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+espacioDisponible() : double" vertex="1">
+          <mxGeometry height="32" width="268" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-62" parent="ktkT-tB9A3ZlmC_fMyVz-54" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="+porcentajeCarga() : double" vertex="1">
+          <mxGeometry height="32" width="268" y="232" as="geometry" />
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-63" edge="1" parent="1" source="ktkT-tB9A3ZlmC_fMyVz-45" style="curved=1;dashed=1;startArrow=none;endArrow=block;endSize=16;endFill=0;exitX=0.13;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="ktkT-tB9A3ZlmC_fMyVz-33" value="implementa">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="152" y="659" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-64" edge="1" parent="1" source="ktkT-tB9A3ZlmC_fMyVz-36" style="curved=1;startArrow=diamondThin;startSize=14;startFill=0;endArrow=none;exitX=0.5;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="ktkT-tB9A3ZlmC_fMyVz-45" value="gestiona (0..*)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ktkT-tB9A3ZlmC_fMyVz-65" edge="1" parent="1" source="ktkT-tB9A3ZlmC_fMyVz-45" style="curved=1;startArrow=diamondThin;startSize=14;startFill=1;endArrow=none;exitX=0.87;exitY=1;entryX=0.5;entryY=0;rounded=0;" target="ktkT-tB9A3ZlmC_fMyVz-54" value="posee (1)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="468" y="659" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

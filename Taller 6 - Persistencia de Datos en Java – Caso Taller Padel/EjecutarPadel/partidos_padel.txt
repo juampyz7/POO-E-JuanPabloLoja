@@ -1,0 +1,5 @@
+Katha y Juan | Diego y Daniela | 2 | 1
+Emi y Mateo | Kathy y Anghelo | 1 | 2
+Daya y Angel | Jhonny y Paola | 2 | 1
+Luz y Ulfer | Angel y Rosa | 2 | 1
+Rosa y Carlos | Kevin y Saskya | 1 | 2
